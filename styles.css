@@ -1,0 +1,42 @@
+.parent {
+  /* background: conic-gradient(from 45deg at 50% 50%, red, yellow); */
+  /* flex-direction: column; */
+  border: 1px solid black;
+  display: flex;
+  height: 300px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+.one {
+  /* min-height: 100px; */
+  height: 50px;
+  width: 100px;
+  /* background-color: lightblue; */
+  border: 1px solid #000000;
+  /* transform:translate(0); */
+  transition: background-color 1s ease-in-out;
+}
+.one:hover {
+  transform: rotate(45deg);
+  background-color: deepskyblue;
+}
+.two {
+  /* min-height: 200px; */
+  height: 50px;
+  width: 500px;
+  /* flex-grow: 1; */
+  /* flex-basis:0; */
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+.three {
+  /* min-height: 150px; */
+  /* flex-grow: 2; */
+  /* flex-shrink: 0; */
+  height: 50px;
+  width: 550px;
+  /* flex-basis:0; */
+  background-color: lightcoral;
+  border: 1px solid black;
+}

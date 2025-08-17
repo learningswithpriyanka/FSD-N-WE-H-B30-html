@@ -1,0 +1,112 @@
+/* html{
+    font-size:22px;
+}
+body{
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+} */
+/* .button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+nav{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}   
+table, th, td ,tr{
+    margin: 20px 0;
+    border: 1px solid #000;
+    padding:0.5rem;
+    border-collapse: collapse;
+} */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.colorClass {
+  color: pink;
+}
+.colorClass2 {
+  color: lightblue;
+}
+.colorClass3 {
+  color: lightgreen;
+}
+/* #info1 {
+  color: orange;
+} */
+
+div {
+  color: green;
+}
+
+/* #info2 {
+  color: purple;
+} */
+/* #info3 {
+  color: blue;
+}
+h1 {
+  color: yellow;
+}
+p {
+  color: red;
+}
+span {
+  color: blue;
+} */
+/* #info5 {
+  background-color: lightgreen;
+} */
+/* descendant combinator */
+h1 {
+  color: yellow;
+}
+div > span {
+    background-color: lightcoral;
+}
+div span {
+  background-color: lightpink;
+}
+span {
+  background-color: lightskyblue;
+}
+
+h1 + p {
+  background-color: lightyellow;
+}
+h1 ~ p {
+    background-color: lightblue;
+}
+p {
+    background-color: lightgray;
+}
+
+
+
+
