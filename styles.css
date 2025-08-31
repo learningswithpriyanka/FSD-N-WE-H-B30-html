@@ -40,3 +40,8 @@
   background-color: lightcoral;
   border: 1px solid black;
 }
+
+
+   .btn {
+          @apply px-4 py-1 rounded-full bg-clifford text-white font-semibold text-[purple];
+        }

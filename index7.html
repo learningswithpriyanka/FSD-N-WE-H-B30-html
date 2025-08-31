@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoTravel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans text-gray-800">
+    <nav class="bg-green-700 text-white px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+        <div class="text-2xl font-bold">GoTravel</div>
+        <div class="flex flex-wrap justify-between gap-4 mt-4 md:mt-0">
+            <a href="#home" class="hover:bg-green-800 px-4 py-2 rounded transition">Home</a>
+            <a href="#about" class="hover:bg-green-800 px-4 py-2 rounded transition">About</a>
+            <a href="#destinations" class="hover:bg-green-800 px-4 py-2 rounded transition">Destinations</a>
+            <a href="#contactus" class="hover:bg-green-800 px-4 py-2 rounded transition">Contact Us</a>
+        </div>
+    </nav>
+    <section id="home" class="relative w-full h-[80vh] overflow-hidden bg-black">
+        <div class="absolute top-1/2 left-3 z-10 transform -translate-y-1/2 text-white text-3xl cursor-pointer"
+            onclick="moveSlide(-1)">
+            &#10094;
+        </div>
+        <div class="absolute top-1/2 right-3 z-10 transform -translate-y-1/2 text-white text-3xl cursor-pointer"
+            onclick="moveSlide(1)">
+            &#10095;
+        </div>
+        <div id="slideContainer" class="flex transition-transform duration-500 ease-in-out h-full">
+            <div class="min-w-full h-full bg-cover bg-center flex flex-col items-center justify-center text-white text-center-px-4"
+                style="
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+          ">
+                <h2 class="text-4xl font-bold mb-4">Explore the World</h2>
+                <a href="#destinations"
+                    class="bg-green-600 hover:bg-green-800 px-6 py-2 rounded text-white text-center font-semibold">Explore
+                    more</a>
+            </div>
+            <div class="min-w-full h-full bg-cover bg-center flex flex-col items-center justify-center text-white text-center-px-4"
+                style="
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+          ">
+                <h2 class="text-4xl font-bold mb-4">Adventure Awaits</h2>
+                <a href="#destinations"
+                    class="bg-green-600 hover:bg-green-800 px-6 py-2 rounded text-white text-center font-semibold">Explore
+                    more</a>
+            </div>
+            <div class="min-w-full h-full bg-cover bg-center flex flex-col items-center justify-center text-white text-center-px-4"
+                style="
+            background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80');
+          ">
+                <h2 class="text-4xl font-bold mb-4">Discover New Places</h2>
+                <a href="#destinations"
+                    class="bg-green-600 hover:bg-green-800 px-6 py-2 rounded text-white text-center font-semibold">Explore
+                    more</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-gray-100">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+            <div class="flex-1 space-y-4 text-left">
+                <p class="text-green-700 font-semibold text-lg"> About Us</p>
+                <h3 class="text-3xl font-bold">We are a travel agency dedicated to helping you explore the world.</h3>
+                <p class="text-gray-700">
+                    Our mission is to provide personalized travel experiences that create lasting memories.
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                    alt="About Us" class="w-full h-auto rounded-lg shadow-lg object-cover h-80 mx-auto max-w-md">
+            </div>
+    </section>
+
+    <!--Destination Section -->
+    <section id="destinations" class="py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Popular Destinations</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="w-72 bg-white border rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover"
+                    src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                    alt="Destination 1">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Paris, France</h3>
+                    <p class="text-gray-600 mb-4">Experience the romance and culture of the City of Light.</p>
+                    <a href="#contactus" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="w-72 bg-white border rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover"
+                    src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                    alt="Destination 1">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Paris, France</h3>
+                    <p class="text-gray-600 mb-4">Experience the romance and culture of the City of Light.</p>
+                    <a href="#contactus" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="w-72 bg-white border rounded-lg shadow-md overflow-hidden">
+                <img class="w-full h-48 object-cover"
+                    src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                    alt="Destination 1">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Paris, France</h3>
+                    <p class="text-gray-600 mb-4">Experience the romance and culture of the City of Light.</p>
+                    <a href="#contactus" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-green-700 text-white text-center py-6 mt-12">
+        <p>&copy; 2023 Travel Agency. All rights reserved.</p>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const slides = document.getElementById("slideContainer");
+        const totalSlides = slides.children.length;
+
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function moveSlide(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+            updateSlidePosition();
+        }
+    </script>
+</body>
+
+</html>

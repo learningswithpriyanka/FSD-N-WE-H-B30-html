@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-jetbrains: #00bfff;
+        --breakpoint-xs: 30rem;
+        --breakpoint-2xl: 100rem;
+        --breakpoint-3xl: 120rem;
+      }
+      @layer base {
+        h1 {
+          @apply font-bold;
+        }
+      }
+      @layer components {
+        .btn {
+          @apply px-4 py-1 rounded-full bg-clifford text-white font-semibold text-[purple];
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1
+      class="font-[500] underline bg-jetbrains sm:text-[5rem] text-[10rem] lg:text-[15rem] xs:text-[3rem]">
+      Hello world!
+    </h1> -->
+    <p class="text-lg text-purple-700 mb-6  border-[10px] rounded outline-black outline-2 text-center m-10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sit velit nisi, quo, dolore assumenda officiis placeat sint blanditiis ullam sequi tempore, necessitatibus corporis facilis suscipit consequatur eum non quae!
+    </p>
+  </body>
+</html>
